@@ -16,7 +16,7 @@ public class Launcher {
         String line;
 
         do {
-            line = in.next();
+            line = in.nextLine();
             rt.convertAndSend("chat_messages", line);
             System.out.println("Message sent my dude");
         } while (!line.equals("q"));
